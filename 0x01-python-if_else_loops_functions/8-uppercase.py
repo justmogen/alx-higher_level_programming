@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uppercase(str):
     add = ""
-    for l in str:
+    for i in str:
         ch = ord(l)
         if ch in range(97, 123):
             ch = ch - 32
