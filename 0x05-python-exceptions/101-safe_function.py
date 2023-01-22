@@ -6,6 +6,6 @@ def safe_function(fct, *args):
     try:
         exc_func = fct(*args)
         return exc_func
-    except (IndexError ValueError Exception):
+    except (IndexError ValueError ZeroDivisionError):
         print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return (None)
