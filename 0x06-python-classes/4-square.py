@@ -2,14 +2,16 @@
 """Square class initialization"""
 
 
+
 class Square:
-    """initializing the new Square
+    """creating the class"""
 
-    Args: size-int
-
-    """
     def __init__(self, size=0):
-        """initializing private size object"""
+        """initializing new square and set
+        private size object
+        size-int
+
+        """
         self.__size = size
 
     @Property
