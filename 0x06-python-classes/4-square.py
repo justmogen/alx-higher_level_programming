@@ -9,13 +9,15 @@ class Square:
 
     """
     def __init__(self, size=0):
-        self.size = size
+        """initializing private size object"""
+        self.__size = size
 
     @Property
     """Get and set the size of square"""
     def size(self):
         return self.__size
 
+    #setter checks for errors and modify
     @Setter.of.size
     def size(self, value):
         if type(value) != int:
