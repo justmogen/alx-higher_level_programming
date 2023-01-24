@@ -3,19 +3,20 @@
 
 
 class Square:
-    """initializing the Square
+    """initializing the new Square
 
-    Args: self-initializing size-int
+    Args: size-int
 
     """
     def __init__(self, size=0):
         self.size = size
 
     @Property
+    """Get and set the size of square"""
     def size(self):
-        self.size
+        return self.__size
 
-    @Setter
+    @Setter.of.size
     def size(self, value):
         if type(value) != int:
             raise TypeError("size must be an integer")
