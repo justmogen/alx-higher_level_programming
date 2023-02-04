@@ -1,0 +1,35 @@
+Test Case
+
+say_my_name: takes first_name and last_name nd prijnts them
+
+import the module:
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+First attempt:
+>>> say_my_name("Alex", "Morgan")
+My name is Alex Morgan
+
+Input integer in last_name:
+>>> say_my_name("Alex", 54)
+Traceback (most recent call last):
+  ...
+    raise TypeError("last_name must be a string")
+TypeError: last_name must be a string
+
+without using ""
+>>> say_my_name(alex, 54)
+Traceback (most recent call last):
+  ...
+NameError: name 'alex' is not defined
+
+Using integers:
+>>> say_my_name(2, 54)
+Traceback (most recent call last):
+  ...
+    raise TypeError("first_name must be a string")
+TypeError: first_name must be a string
+
+
+Empty first_name
+>>> say_my_name("", "Morgan")
+My name is  Morgan
