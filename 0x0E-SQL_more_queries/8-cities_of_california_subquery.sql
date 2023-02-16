@@ -3,10 +3,10 @@
 	Results must be sorted in ascending order by cities.id
 */
 SELECT `id`, `name`
-FROM cities
-WHERE `state_id` = (
+  FROM cities
+ WHERE `state_id` IN (
 	SELECT `id`
 	FROM `states`
-	WHERE name = "California"
+	WHERE `name` = "California"
 )
 ORDER BY `id`; --ASC is by default even if we not initialize it
