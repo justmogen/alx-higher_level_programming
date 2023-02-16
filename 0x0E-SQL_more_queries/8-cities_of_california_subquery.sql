@@ -9,4 +9,4 @@ WHERE `state_id` = (
 	FROM `states`
 	WHERE name = "California"
 )
-ORDER BY cities.`id` ASC; --ASC is by default even if we not initialize it
+ORDER BY `id`; --ASC is by default even if we not initialize it
