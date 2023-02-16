@@ -2,9 +2,9 @@
 /* states table contains only one record where name = California
 	Results must be sorted in ascending order by cities.id
 */
-SELECT `id`, `name`
-  FROM cities
- WHERE `state_id` IN (
+SELECT cities*.
+FROM cities, states
+WHERE cities.`state_id` IN (
 	SELECT `id`
 	FROM `states`
 	WHERE `name` = 'California'
