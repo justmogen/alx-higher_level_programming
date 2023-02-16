@@ -7,6 +7,6 @@ SELECT `id`, `name`
  WHERE `state_id` IN (
 	SELECT `id`
 	FROM `states`
-	WHERE `name` = "California"
+	WHERE `name` = 'California'
 )
-ORDER BY `id`; --ASC is by default even if we not initialize it
+ORDER BY cities.`id`; --ASC is by default even if we not initialize it
