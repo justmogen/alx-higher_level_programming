@@ -2,6 +2,7 @@
 /* states table contains only one record where name = California
 	Results must be sorted in ascending order by cities.id
 */
+USE hbtn_0d_usa;
 SELECT * FROM `cities`
 WHERE `state_id` = (
 	SELECT `id` FROM `states`
